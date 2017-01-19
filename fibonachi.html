@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Fibonachi number</title>
+  <script>
+  // Fibonachi function Fn = Fn-1 + Fn-2
+	function fib(n) {
+			var a = 1, b = 1;
+			for (i = 3; i <= n; i++) {
+				var c = a + b;
+				a=b, b=c;
+		}
+		return b;
+	}
+	alert(fib(7));
+  </script>
+</head>
+<body>
+</body>
+</html>
