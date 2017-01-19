@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+    <script>
+    
+    // Recursion with for control flow
+		/*function sunTo(x) {
+			var sum = 0;
+			for (i=1; i<=x; i++) {
+				sum += i;		
+			}
+			return sum;
+		}
+		alert(sunTo(100));*/
+		
+	// Recusion with formula sumTo(n) = sumTo(n-1)
+	
+		function SumTo(n) {
+			if (n == 1) return 1; 
+			return n + SumTo(n-1);				
+		}
+		alert(SumTo(100));
+  </script>
+</head>
+<body>
+</body>
+</html>
